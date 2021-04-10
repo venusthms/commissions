@@ -65,7 +65,8 @@ a,
 a:hover,
 iframe.tmblr-iframe,
 .selectFilter,
-.search {
+.search,
+.search input[type="text"] {
   transition-duration: 0.7s;
   -moz-transition-duration: 0.7s;
   -webkit-transition-duration: 0.7s;
