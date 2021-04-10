@@ -17,6 +17,16 @@
   margin-right: 5px;
 }
 
+body.dark iframe.tmblr-iframe {
+        filter: contrast(150%);
+        -webkit-filter: contrast(150%);
+        -o-filter: contrast(150%);
+        -moz-filter: contrast(150%);
+        -ms-filter: contrast(150%);
+}
+
+body.dark iframe.tmblr-iframe.show-c {opacity:0.9} 
+
 iframe.tmblr-iframe {
   z-index: 99999999999999 !important;
   top: 4px !important;
