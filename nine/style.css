@@ -64,7 +64,8 @@ a:hover {color: #65b1ac}
 a,
 a:hover,
 iframe.tmblr-iframe,
-.selectFilter {
+.selectFilter,
+.search {
   transition-duration: 0.7s;
   -moz-transition-duration: 0.7s;
   -webkit-transition-duration: 0.7s;
