@@ -113,7 +113,6 @@ form.search {margin-top: -5px}
   grid-template-rows: 1fr;
   grid-column-gap: 25px;
   grid-row-gap: 0px;
-  width: calc((65vw - 230px) - 30px);
   height: auto;
 }
 
