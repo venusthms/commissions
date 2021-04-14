@@ -129,7 +129,7 @@ form.search {margin-top: -5px}
 .t-title {
   position:relative;
   display: flex;
-  padding-right: 10px;
+  padding: 5px 10px 5px 0;
   box-sizing: border-box;
   justify-content: flex-start;
   align-items: center;
