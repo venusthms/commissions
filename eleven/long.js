@@ -5,10 +5,12 @@ $(document).ready(function() {
       var win = $(this).children('.text').children('.desc').width();
 
       if (win > div) {
+         $(this).removeClass('not-long');
          $(this).addClass('long');
-      } else {
-            $(this).addClass('not-long');
-        }
+      } 
 
    });
+   $(".not-long .text .desc").tooltip({
+  disabled: true
+});
 });
