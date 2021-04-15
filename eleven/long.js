@@ -6,8 +6,9 @@ $(document).ready(function() {
 
       if (win > div) {
          $(this).addClass('long');
-         $(this).children('.text').children('.desc').addClass('disable');
-      }
+      } else {
+            $(this).addClass('not-long');
+        }
 
    });
 });
