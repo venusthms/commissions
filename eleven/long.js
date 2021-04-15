@@ -6,7 +6,7 @@ $(document).ready(function() {
 
       if (win > div) {
          $(this).addClass('long');
-          $(this).children('.text').children('.desc').addClass('disable');
+         $(this).children('.text').children('.desc').addClass('disable');
       }
 
    });
