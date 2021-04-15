@@ -1,0 +1,127 @@
+/* tooltips */
+.ui-tooltip {
+  position: absolute;
+  padding-top: 10px;
+  z-index: 99999;
+}
+
+.ui-tooltip-content {
+  padding: 4px 6px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* controls */
+iframe.tmblr-iframe {
+  z-index: 99999999999999 !important;
+  top: 0 !important;
+  right: 0 !important;
+  transform: scale(0.65);
+  transform-origin: 100% 0;
+  -webkit-transform: scale(0.65);
+  -webkit-transform-origin: 100% 0;
+  -o-transform: scale(0.65);
+  -o-transform-origin: 100% 0;
+  -moz-transform: scale(0.65);
+  -moz-transform-origin: 100% 0;
+  -ms-transform: scale(0.65);
+  -ms-transform-origin: 100% 0;
+}
+
+/* links */
+a {text-decoration: none}
+
+/* transitions */
+a,
+a:hover,
+iframe.tmblr-iframe,
+.text {
+  transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -webkit-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+}
+
+/* header */
+header {
+  position: relative;
+  display: flex;
+  right: 0;
+  left: 0;
+  margin: auto;
+  padding: 20px 35px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* title */
+.title {max-width: 50%}
+.title h1 {margin: 0}
+.title h2 {margin: 0;font-weight: normal}
+
+/* links */
+.links {
+  position: absolute;
+  height: calc(100% - 2px);
+  right: 35px;
+  top: 0;
+}
+
+.links a {
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+}
+
+.links a:last-of-type {margin-right: 0}
+a.mobile-menu {display: none;border-bottom: none;z-index: 999}
+
+/* grid */
+.grid {
+  position: relative;
+  height: auto;
+  margin: auto;
+}
+
+/* items */
+.item {
+  display: flex;
+  float: left;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* icon */
+.icon {
+  display: inline-flex;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* text */
+.text a {display: block}
+.expanded {white-space: initial}
+.expanded .desc {position: relative}
+.desc {display: inline}
+
+/* media queries */
+@media only screen and (max-width: 550px) {
+  .grid-sizer,
+  .item {
+    width: 100%;
+  }
+  header {
+    top: 30px;
+  }
+  .grid {
+    top: calc(30px + 50px);
+  }
+}
