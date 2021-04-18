@@ -162,6 +162,7 @@ ul.filters {
   width: 100%;
   align-items: center;
   box-sizing: border-box;
+  height:auto
 }
 
 .fan {
@@ -188,6 +189,11 @@ ul.filters {
 
 .trophies span {
   display: block;
+}
+
+.ratings {
+  display:block;
+  padding:20px;
 }
 
 .text {
