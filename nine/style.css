@@ -220,6 +220,19 @@ ul.filters {
 .bottom a.min b:first-of-type {display: none}
 a.min i {transform: rotate(180deg)}
 
+.trophies {display:inline-block}
+.t-wrapper p {
+    display:inline-flex;
+    margin:0 5px 0 0;
+    padding: 0 10px;
+    vertical-align:top;
+    height:51px;
+    box-sizing:border-box;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
 @media only screen and (max-width: 780px) {
     header {flex-direction:column;height:160px;align-items: flex-start}
     .grid {top: calc(80px + 160px + 50px)}
