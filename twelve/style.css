@@ -199,6 +199,7 @@ header h1 {display: inline}
 
 .long .transcript .p-content {overflow: auto}
 .icons i {display: inline-flex;align-items: center;justify-content: center}
+.icons a {margin-left:0}
 
 /* media queries */
 @media only screen and (max-width: 500px) {
