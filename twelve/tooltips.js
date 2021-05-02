@@ -1,26 +1,24 @@
 $(document).ready(function() {
-   $(".t-button").click(function() {
-      if ($(this).parents('.bottom').siblings('.transcript').hasClass('active')) {
+   $(".bottom a").click(function() {
+      if ($(this).children('.cp').hasClass('cp-cross')) {
          $(this).tooltip().tooltip("option", "content", "Close");
       } else {
-         $(this).tooltip().tooltip("option", "content", "Transcript");
+         $(this).tooltip().tooltip("option", "content", function() {
+            return $(this).prop('title');
+         });
       }
+
       return false
    });
-   $(".a-button").click(function() {
-      if ($(this).parents('.bottom').siblings('.art').hasClass('active')) {
-         $(this).tooltip().tooltip("option", "content", "Close");
+   $(".bottom a").click(function() {
+      if ($(this).siblings().children('.cp').hasClass('cp-cross')) {
+         $(this).siblings().tooltip().tooltip("option", "content", "Close");
       } else {
-         $(this).tooltip().tooltip("option", "content", "Art Credit");
+         $(this).siblings().tooltip().tooltip("option", "content", function() {
+            return $(this).prop('title');
+         });
       }
-      return false
-   });
-   $(".w-button").click(function() {
-      if ($(this).parents('.bottom').siblings('.writing').hasClass('active')) {
-         $(this).tooltip().tooltip("option", "content", "Close");
-      } else {
-         $(this).tooltip().tooltip("option", "content", "Writing Credit");
-      }
+
       return false
    });
 });
