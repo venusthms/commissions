@@ -273,6 +273,8 @@ header h1 {display: inline}
     height: 25px;
     margin-right: 10px;
   }
+  .selectFilter:first-of-type {
+    margin-bottom:12px
 }
 
 /* searchbar */
