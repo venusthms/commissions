@@ -224,7 +224,7 @@ header h1 {display: inline}
     top: calc(55px + 50px);
   }
   
-  search {
+  .search {
     height:auto;
     line-height:auto;
 }
