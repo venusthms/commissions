@@ -232,6 +232,8 @@ header h1 {display: inline}
     .h-right {
     flex-wrap:wrap;
   }
+  ul.filters {
+    margin-bottom:12px
 }
 
 @media only screen and (max-width: 500px) {
