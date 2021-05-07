@@ -1,6 +1,7 @@
-$(document).ready(function() {
+  $(document).ready(function() {
    var qsRegex; // quick search regex
    var filters = {};
+   var selectFilter; // filter value from <select>s
 
    var $grid = $('.grid').isotope({
       itemSelector: '.item',
@@ -13,9 +14,25 @@ $(document).ready(function() {
          // combine search & select filters
          var $this = $(this);
          var searchResult = qsRegex ? $this.text().match(qsRegex) : true;
-
-         return searchResult
+         var selectResult = selectFilter ? $this.is(selectFilter) : true;
+         return searchResult && selectResult;
       }
+   });
+   
+// filter buttons
+   $('select').change(function() {
+      var $this = $(this);
+
+      // store filter value in object
+      // i.e. filters.color = 'red'
+      var group = $this.attr('data-filter-group');
+
+      filters[group] = $this.find(':selected').attr('data-filter-value');
+      // convert object into array
+      var filterValues = getObjectValues(filters);
+      selectFilter = filterValues.join('');
+      // console.log( selectFilter );
+      $grid.isotope();
    });
 
    // use value of search field to filter
