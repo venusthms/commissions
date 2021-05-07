@@ -111,6 +111,34 @@ header {
 header h1 {display: inline}
 .h-left,.h-right {display: inline-flex;align-items: center}
 
+/* filter */
+ul.filters {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.filters li {
+    display:inline;
+}
+
+.selectFilter {
+  display: inline;
+  line-height: 1.3;
+  box-sizing: border-box;
+  border: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-repeat: no-repeat;
+  padding: 8px 50px 8px 20px;
+  margin-right: 10px;
+}
+
+.selectFilter::-ms-expand {display: none}
+.selectFilter:focus {outline: none;box-shadow: none}
+.selectFilter option {font-weight: normal;box-shadow: none}
+
 /* searchbar */
 .search {display: inline-block;margin-right: 10px}
 .search input[type="text"] {padding: 8px 20px;border: none}
@@ -139,7 +167,6 @@ header h1 {display: inline}
 .item:last-of-type {
   margin-bottom: 100px;
 }
-
 
 /* items title */
 .top {
