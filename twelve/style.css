@@ -219,18 +219,6 @@ header h1 {display: inline}
   .h-right {
     margin-top: 15px;
   }
-  .navigation {
-    top: 50px;
-    position: relative;
-    width: 90vw;
-    text-align: right;
-    right: 0;
-    margin: auto;
-  }
-  .navigation a {
-    width: 35px;
-    height: 35px;
-  }
 
   .grid {
     top: calc(55px + 50px);
