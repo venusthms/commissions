@@ -21,4 +21,17 @@ $(document).ready(function() {
 
       return false
    });
+ $(function() {
+   var select = $('.selectFandom');
+   select.html(select.find('option').sort(function(x, y) {
+      return $(x).text() > $(y).text() ? 1 : -1;
+   }));
+});
+
+$(function() {
+   var select = $('.selectCategory');
+   select.html(select.find('option').sort(function(x, y) {
+      return $(x).text() > $(y).text() ? 1 : -1;
+   }));
+});
 });
