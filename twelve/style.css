@@ -228,20 +228,12 @@ header h1 {display: inline}
 @media only screen and (max-width: 500px) {
   header {
     top: 75px;
-    height: auto;
-    padding: 25px 15px;
-    position: relative;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  header h1 {
-    margin: 0;
-    line-height: 45px;
   }
 
   .h-right {
-    margin-top: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 25px;
   }
 
   iframe.tmblr-iframe {
@@ -263,9 +255,6 @@ header h1 {display: inline}
     height: 35px;
   }
 
-  .grid {
-    top: calc(55px + 50px);
-  }
   .grid-sizer,
   .item {
     width: 100%;
