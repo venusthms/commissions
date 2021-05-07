@@ -276,6 +276,8 @@ header h1 {display: inline}
   .selectFilter:first-of-type {
     margin-bottom:12px
 }
+  
+}
 
 /* searchbar */
 .search input:focus {outline-offset: 0px;outline: none}
