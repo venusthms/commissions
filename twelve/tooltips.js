@@ -1,5 +1,5 @@
 $(document).ready(function() {
-   $(".bottom a").click(function() {
+   $(".bottom a:not(:last-of-type)").click(function() {
       if ($(this).children('.cp').hasClass('cp-cross')) {
          $(this).tooltip().tooltip("option", "content", "Close");
       } else {
@@ -10,7 +10,7 @@ $(document).ready(function() {
 
       return false
    });
-   $(".bottom a").click(function() {
+   $(".bottom a:not(:last-of-type)").click(function() {
       if ($(this).siblings().children('.cp').hasClass('cp-cross')) {
          $(this).siblings().tooltip().tooltip("option", "content", "Close");
       } else {
