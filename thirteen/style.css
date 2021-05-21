@@ -304,6 +304,6 @@ ul.filters li {
     margin-bottom:12px
 }
   
-.i-popup {left:calc((100vw - 96vw) / 2)}
+.i-popup {left:calc((100vw - 94vw) / 2);top:355px}
   
 }
