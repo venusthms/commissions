@@ -298,6 +298,10 @@ ul.filters li {
     width: 35px;
     height: 35px;
   }
+  
+  .grid {
+    top:calc(55px + 50px);
+  }
 
   .grid-sizer,
   .item {
