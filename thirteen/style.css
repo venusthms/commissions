@@ -153,6 +153,20 @@ ul.filters li {
   margin-right: 0;
 }
 
+.buttons {display:flex}
+.buttons a .cp-info{font-size:1.2em}
+.buttons a .cp-cross{font-size:1em}
+
+/* info popup*/
+.i-popup {
+    position:absolute;
+    top:160px;
+    right:calc((100% - 70vw) / 2);
+    z-index:999;
+    box-sizing:border-box;
+    display:none;
+}
+
 /* grid + items */
 .grid {
   position: relative;
@@ -195,6 +209,8 @@ ul.filters li {
   justify-content: center;
 }
 
+.t-button .cp-user {font-size:.9em}
+
 /* popup */
 .popup {
   position: absolute;
@@ -212,9 +228,8 @@ ul.filters li {
 .p-content {box-sizing: border-box;overflow: hidden}
 .bottom .cp-cross {position: relative;top: 1px;font-size: 0.8em}
 
-/* credit sections */
-.art .p-content,
-.writing .p-content {
+/* winners sections */
+.winners .p-content {
   display: inline-flex;
   justify-content: center;
   align-items: center;
