@@ -160,8 +160,6 @@ ul.filters li {
 /* info popup*/
 .i-popup {
     position:absolute;
-    top:160px;
-    right:calc((100% - 70vw) / 2);
     z-index:999;
     box-sizing:border-box;
     display:none;
