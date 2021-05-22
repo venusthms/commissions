@@ -243,7 +243,7 @@ ul.filters li {
   header {
     height: auto;
     padding: 25px 15px;
-    position: relative;
+    
     flex-direction: column;
     align-items: flex-start;
   }
@@ -258,7 +258,7 @@ ul.filters li {
   }
 
   .grid {
-    top: calc(55px + 50px);
+    top: calc(150px + 100px);
   }
   
   .search {
@@ -277,6 +277,7 @@ ul.filters li {
 @media only screen and (max-width: 500px) {
   header {
     top: 75px;
+    position:relative;
   }
 
   iframe.tmblr-iframe {
